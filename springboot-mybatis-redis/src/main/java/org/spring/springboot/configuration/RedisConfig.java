@@ -8,6 +8,11 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 import com.alibaba.fastjson.support.spring.GenericFastJsonRedisSerializer;
 
+/**
+ * redis 注入
+ *
+ * @author colg
+ */
 @SuppressWarnings({ "rawtypes", "unchecked" })
 @Configuration
 public class RedisConfig {

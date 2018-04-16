@@ -57,6 +57,7 @@
 		<module>springboot-dubbo-server</module>
 		<module>springboot-dubbo-client</module>
 
+		<module>springboot-session</module>
 	</modules>
 
 </project>

@@ -5,3 +5,14 @@ spring:
     username: root
     password: root
     driver-class-name: com.mysql.jdbc.Driver
+    
+# MyBatis 配置
+mybatis:
+#  type-aliases-package: org.spring.springboot.domain
+  mapper-locations:
+    - classpath:mapper/*.xml
+
+# MyBatis 日志级别
+logging:
+  level:
+    org.spring.springboot.dao: debug

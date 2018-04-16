@@ -10,7 +10,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Created by bysocket on 07/02/2017.
+ * 
+ *
+ * @author colg
  */
 @RestController
 public class CityRestController {
