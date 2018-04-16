@@ -1,0 +1,33 @@
+spring:
+  datasource:       # 数据库配置
+    url: jdbc:mysql://localhost:3306/springbootdb?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver    
+  swagger:          # swagger 配置
+    enabled: true                                                       # 是否启用swagger
+    group:
+      A.api:                                                            # 用户组api，可以配置多个组
+        group-name: a-1                                                 # api组的名字，会在swagger-ui的api下拉列表中显示；组名前的序号，多个组可以排序；最好不要写中文
+        title: Spring Boot整合的swagger的配置，支持分组配置，分环境启用。            # api组的标题，会在swagger-ui的标题处显示
+        description: Spring Boot 整合 Swgger2 Demo                       # api组的描述，会在swagger-ui的描述中显示
+        version: 1.0.0                                                  # api版本
+        license: 该文档仅限公司内部传用                                        # 授权协议
+        license-url: '#'                                                # 授权协议地址
+        terms-of-service-url: https://blog.csdn.net/NorRinInTheSky      # 服务条款地址
+        contact:                                                        # 文档联系人
+          name: colg
+          email: 121529654@qq.com
+          url: https://blog.csdn.net/NorRinInTheSky
+        base-package: org.spring.springboot.controller                  # 扫描的目录
+    
+# MyBatis配置
+mybatis:
+#  type-aliases-package: org.spring.springboot.domain
+  mapper-locations:
+    - classpath:mapper/*.xml
+
+# MyBatis日志
+logging:
+  level:
+    org.spring.springboot.dao: debug

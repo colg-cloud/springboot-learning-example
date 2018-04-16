@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    include:
+      - mybatis
+      - redis
+      
+logging:
+  level:
+    org.spring.springboot.dao: debug

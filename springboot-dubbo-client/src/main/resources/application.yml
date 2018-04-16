@@ -1,0 +1,12 @@
+# 避免和 dubbo server 端口冲突
+server:
+  port: 8081
+  
+spring:
+  dubbo:
+    application:
+      name: springboot-dubbo-client
+    registry:
+      protocol: zookeeper
+      address: 192.168.21.101:2181
+    scan: org.spring.springboot.service

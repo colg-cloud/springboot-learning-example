@@ -1,0 +1,12 @@
+# 家乡属性
+home:
+  province: 湖北省
+  city: 襄阳市
+  desc: 我家住在${home.province}${home.city}
+  
+# 用户属性
+user:
+  id: 1
+  age: ${random.int[25,40]}
+  desc: Jack
+  uuid: ${random.uuid}
